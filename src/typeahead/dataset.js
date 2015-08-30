@@ -191,7 +191,7 @@ var Dataset = (function() {
         $el = $(that.templates.suggestion(context))
         .data(keys.obj, suggestion)
         .data(keys.val, that.displayFn(suggestion))
-        .addClass(that.classes.suggestion + ' ' + that.classes.selectable);
+        .addClass(that.classes.suggestion + ' ' + that.classes.selectable + ' needsclick');
 
         fragment.appendChild($el[0]);
       });
